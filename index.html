@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrUnreal — AI Ecosystem Builder</title>
+    <meta name="description" content="Portfolio of AI tools, visualizations, and agentic systems. Building the infrastructure layer for the AI era.">
+    <meta name="keywords" content="AI tools, LLM, agent orchestration, developer portfolio, open source">
+    <meta property="og:title" content="MrUnreal — AI Ecosystem Builder">
+    <meta property="og:description" content="Portfolio of AI tools, visualizations, and agentic systems.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+    <!-- Ambient canvas background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">MrUnreal<span class="blink">_</span></a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#stats">Stats</a>
+                <a href="https://github.com/MrUnreal" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">AI Ecosystem Builder</div>
+            <h1 class="hero-title">
+                Building tools for the<br>
+                <span class="gradient-text" id="rotating-text">agentic era</span>
+            </h1>
+            <p class="hero-desc">Fintech engineering leader turned open-source builder. Shipping AI infrastructure — agent orchestration, interactive visualizations, and developer tools.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="https://github.com/MrUnreal" target="_blank" rel="noopener" class="btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub Profile
+                </a>
+
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-ring ring-3"></div>
+            <div class="orbit-core">
+                <div class="core-glow"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/><path d="M19 14l.8 2.8 2.7.7-2.7.8-.8 2.7-.8-2.7-2.7-.8 2.7-.7z" opacity="0.5"/></svg>
+            </div>
+            <div class="orbit-node node-1" title="Orchestration"><svg viewBox="0 0 24 24"><circle cx="5" cy="5" r="1.5"/><circle cx="19" cy="5" r="1.5"/><circle cx="12" cy="19" r="1.5"/><path d="M6.5 6l4.5 10.5M17.5 6l-4.5 10.5"/></svg></div>
+            <div class="orbit-node node-2" title="Visualization"><svg viewBox="0 0 24 24"><rect x="4" y="13" width="3" height="7" rx="0.5"/><rect x="10.5" y="9" width="3" height="11" rx="0.5"/><rect x="17" y="4" width="3" height="16" rx="0.5"/></svg></div>
+            <div class="orbit-node node-3" title="Analysis"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15.5 15.5l5 5"/></svg></div>
+            <div class="orbit-node node-4" title="Gaming"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="3"/><path d="M8 10v4M6 12h4"/><circle cx="16" cy="11" r="0.8" fill="currentColor"/><circle cx="18" cy="13" r="0.8" fill="currentColor"/></svg></div>
+            <div class="orbit-node node-5" title="Monitoring"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></div>
+        </div>
+    </section>
+
+    <!-- Marquee ticker -->
+    <div class="ticker">
+        <div class="ticker-track" id="ticker-track"></div>
+    </div>
+
+    <!-- Featured Projects -->
+    <section class="section" id="projects">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects</h2>
+                <p class="section-desc">Tools, visualizations, and systems for the AI ecosystem — auto-updated from GitHub</p>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Populated by JS -->
+            </div>
+            <div class="loading-indicator" id="projects-loading">
+                <div class="loader"></div>
+                <span>Fetching from GitHub...</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">Tech Stack</span>
+                <h2>Skills & Technologies</h2>
+                <p class="section-desc">Polyglot by conviction — pick the right tool for the job, every time</p>
+            </div>
+            <div class="skills-container" id="skills-container">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section" id="stats">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">Live Data</span>
+                <h2>By the Numbers</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-repos">—</div>
+                    <div class="stat-label">Public Repos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-languages">—</div>
+                    <div class="stat-label">Languages Used</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-featured">—</div>
+                    <div class="stat-label">Featured Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-activity">—</div>
+                    <div class="stat-label">Last Active</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="section-inner cta-inner">
+            <h2>Let's build the future of AI tooling</h2>
+            <p>All projects are open source. Star, fork, or contribute.</p>
+            <a href="https://github.com/MrUnreal" target="_blank" rel="noopener" class="btn-primary btn-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Visit GitHub Profile
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-logo">MrUnreal<span class="blink">_</span></span>
+            <span class="footer-text">AI Ecosystem Tools · Auto-updated via GitHub API</span>
+        </div>
+    </footer>
+
+    <script src="app.js?v=7"></script>
+</body>
+</html>
